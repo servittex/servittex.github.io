@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url(menu.css);
+@import url(bannerextintor.css);
+@import url(banner.css);
+@import url(slider.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  user-select: none;
+}
+
+body.noscroll {
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 65px;
+  color: rgb(99, 99, 99);
+  box-shadow: 5px 0 4px rgba(71, 53, 53, 0.2);
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.header1 {
+  width: 100%;
+  height: 65px;
+  background: rgba(255, 255, 255, 0.93);
+  backdrop-filter: blur(4px);
+  color: rgb(99, 99, 99);
+  box-shadow: 5px 0 4px rgba(71, 53, 53, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.contenedor {
+  width: 98%;
+  margin: auto;
+}
+
+.contenedor .centrarlogotipo {
+  display: block;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.logotipo {
+  width: 155px;
+  height: 55px;
+  padding-top: 7px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+header .contenedor {
+  display: table;
+}
+
+section {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+footer {
+  width: 100%;
+  height: 100%;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  background-color: rgb(40, 40, 44);
+  justify-content: center;
+}
+
+.contenedorfooter {
+  width: 100%;
+  background-color: rgb(40, 40, 44);
+}
+
+.copy {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  padding-top: 5px;
+  font-size: 12px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.copy1 {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.copy2 {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.contenedorfooter .sociales {
+  padding-top: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+}
+
+.contenedorfooter .sociales a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.contenedorfooter .sociales a:hover {
+  color: rgb(180, 179, 179);
+  transition: all 0.5s;
+}
+
+@media (min-width: 1400px) {
+  .contenedor {
+    width: 1400px;
+  }
+}
+
+@media screen and (min-width: 1051px) {
+  body.noscroll {
+    overflow: scroll;
+  }    
+    
+  .contenedor .centrarlogotipo {
+    display: block;
+    width: 180px;
+    float: left;
+  }
+
+  .logotipo {
+    width: 180px;
+    height: 60px;
+    padding-top: 7px;
+  }
+}
+
+@media (min-width: 700px) {
+  .contenedor .centrarlogotipo {
+    display: block;
+    width: 180px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .logotipo {
+    display: block;
+    width: 180px;
+    height: 60px;
+    padding-top: 7px;
+  }
+
+  .copy {
+    font-size: 17px;
+  }
+  .copy1 {
+    font-size: 17px;
+  }
+
+  .copy2 {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .contenedor {
+    min-width: 310px;
+  }
+}

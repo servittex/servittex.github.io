@@ -1,0 +1,21 @@
+#Quitar .php Url amigable
+RewriteBase /
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php
+
+#Bloquear bots
+RewriteEngine on
+RewriteCond %{HTTP_HOST} !^$
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteCond %{HTTPS}s ^on(s)|
+RewriteRule ^ http%1://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# Prevenir ataques DDoS
+<FilesMatch "^(xmlrpc\.php)">
+Order Deny,Allow
+# Allow from xx.xx.xx.xxx
+# Allow from yy.yy.yy.yyy
+Deny from all
+</FilesMatch>

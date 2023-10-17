@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contamos con todo tipo de elementos de dotación industrial. Somos una compañía con cobertura a nivel nacional. " />
+    <meta name="keywords"
+        content="Dotación industrial Colobmia, Dotación industrial Bogotá, Dotación industrial, Overol industrial, Botas de seguridad, Guantes industriales, Cascos de seguridad, Camisas dedotación, Jeanes dotación, Chalecos industriales empresarial, Chaqueta de seguridad, Señalización vial" />
+    <!--favicon-->
+    <link rel="icon" href="imagenes/logotipo/isotipo.ico">
+    <title>Dotación industrial: Servittex</title>
+
+    <!--Link hoja de estillos-->
+    <link rel="stylesheet" href="css/estilos.css" />
+    <!--Link logos redes sociales-->
+    <link rel="stylesheet" href="css/fontello.css" />
+    <!--Link js para abrir menú-->
+    <script src="js/app.js" defer></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!--Link jquery-->
+    <script src="js/jquery.min.js"></script>
+    <!--Bloquear clic derecho-->
+    <script type="text/javascript">
+        document.oncontextmenu = function () {
+            return false;
+        };
+    </script>
+</head>
+
+<body>
+
+    <!--Header y menú responsive-->
+    <header>
+        <nav class="contenedor">
+            <span class="btn_menu" onclick="showmenu()">
+                <i>
+                    <div class="contenedormenu" id="contenedormenu" onclick="myFunction(this)">
+                        <div class="linea-1"></div>
+                        <div class="linea-2"></div>
+                        <div class="linea-3"></div>
+                    </div>
+                </i>
+            </span>
+            <div class="centrarlogotipo">
+                <a class="" href="index">
+                    <img class="logotipo" src="imagenes/logotipo/logotipo.png" alt="Logotipo Servittex S.A.S." />
+                </a>
+            </div>
+
+            <ul class="menu" id="mostrarmenu">
+                <a href="extintores">Extintores</a>
+                <a href="dotacion">Dotación</a>
+                <a href="primerosauxilios">Primeros auxilios</a>
+                <a href="equipodecarretera">Equipo de carretera</a>
+                <a href="about">About</a>
+                <a href="contacto">Contacto</a>
+            </ul>
+        </nav>
+
+        <div class="header1"></div>
+
+    </header>
+
+    <!--Título y cards -->
+
+    <main>
+
+        <!--Titulo-->
+        <div class="container1">
+            <div class="titulo">
+                <h1 class="center-align titulo">Dotación</h1>
+                <a href="https://wa.me/573103490408" target="blank">
+                    <p>Contáctate con nosotros y te asesoraremos</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- Swiper -->
+        <div class="container">
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <img class="carrusel_img" src="imagenes/dotacion/dotacion-1.jpg" alt="Dotación">
+                        <div class="card-description">
+                            <div class="card-title">
+                                <h4>Dotación de seguridad</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>Elementos de protección personal de marcas certificadas.</p>
+                            </div>
+                            <div class="card-link">
+                                <a href="#">Ver más</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="carrusel_img" src="imagenes/dotacion/camisas-y-jeanes.jpg"
+                            alt="Camisas y jeanes de dotación">
+                        <div class="card-description">
+                            <div class="card-title">
+                                <h4>Camisas y Jeanes</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>Dotaciones en jean, drill, algodón y Oxford con bordados y estampados.</p>
+                            </div>
+                            <div class="card-link">
+                                <a href="#">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="carrusel_img" src="imagenes/dotacion/chaqueta.jpg" alt="Chaqueta de dotación">
+                        <div class="card-description">
+                            <div class="card-title">
+                                <h4>Chaquetas</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>Chaqueta de seguridad, impermeable y reflectiva con logotipo empresarial.</p>
+                            </div>
+                            <div class="card-link">
+                                <a href="#">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="carrusel_img" src="imagenes/dotacion/chalecos.jpg" alt="Chalecos de dotación">
+                        <div class="card-description">
+                            <div class="card-title">
+                                <h4>Chalecos</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>Chalecos acolchados e impermeables de dotación empresarial unisex.</p>
+                            </div>
+                            <div class="card-link">
+                                <a href="#">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="carrusel_img" src="imagenes/dotacion/vial.jpg" alt="Señalización vial">
+                        <div class="card-description">
+                            <div class="card-title">
+                                <h4>Señalización vial</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>Contamos con todos los elementos de señalización reglamentarios.</p>
+                            </div>
+                            <div class="card-link">
+                                <a href="#">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Swiper JS -->
+    <script src="js/animacionmenu.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/appcards.js"></script>
+    <script src="js/ligthbox.js"></script>
+
+</body>
+
+</html>

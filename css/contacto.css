@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  background-color: rgb(244, 246, 247);
+}
+
+main {
+  margin-top: 75px;
+  margin-bottom: 15px;
+}
+
+/*Texto contacto y mapa modo celular*/
+
+.contacto .gridcontacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contacto .gridcontacto .textocontacto {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  text-align: justify;
+  width: 94%;
+  max-width: 700px;
+  box-shadow: 3px 3px 3px rgba(134, 135, 136, 0.1);
+  border-radius: 35px;
+  color: rgb(52, 53, 54);
+  margin: 3%;
+  padding-top: 4%;
+  padding-bottom: 8%;
+}
+
+.textocontacto h1 {
+  text-align: center;
+  font-size: 32px;
+  padding-top: 3%;
+}
+
+.textocontacto a {
+  text-decoration: none;
+  color: rgb(67, 67, 67);
+}
+
+.textocontacto p {
+  text-align: center;
+  padding-top: 3%;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.contacto .gridcontacto .divmapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 94%;
+  margin: 3%;
+}
+
+.contacto .gridcontacto .divmapa .mapa {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 30px;
+  box-shadow: 3px 3px 3px rgba(134, 135, 136, 0.1);
+}
+
+/*Horario*/
+.centrarhorario {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.horario {
+  margin: 3%;
+  width: 94%;
+  max-width: 700px;
+  height: 100%;
+  padding-top: 2%;
+  background: white;
+  box-shadow: 3px 3px 3px rgba(134, 135, 136, 0.1);
+  border-radius: 35px;
+}
+
+.gridhorario {
+  display: grid;
+  margin: auto;
+  width: 210px;
+  grid-gap: 2px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: 50% 50%;
+  padding-bottom: 3%;
+  padding-top: 5px;
+  align-items: center;
+}
+
+.txthorario {
+  color: #454647;
+}
+
+.diashorario {
+  text-align: left;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  color: #535353;
+}
+
+.horashorario {
+  grid-row-start: 4;
+  grid-row-end: 3;
+  text-align: right;
+  color: #535353;
+}
+
+/*Maximo modo pc*/
+@media (min-width: 1400px) {
+  .contacto {
+    max-width: 1400px;
+  }
+  .horario {
+    max-width: 1400px;
+  }
+}
+
+/*Texto y mapa modo pc*/
+@media screen and (min-width: 1050px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    min-height: 1000px;
+    margin-top: 80px;
+    margin-top: 100px;
+    margin-bottom: 5px;
+  }
+
+  body {
+    background-color: white;
+  }
+
+  .contacto {
+    width: 100%;
+  }
+
+  .contacto .gridcontacto {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contacto .gridcontacto .divmapa {
+    width: 100%;
+    height: 100%;
+    margin-right: 0;
+  }
+
+  .contacto .gridcontacto .divmapa .mapa {
+    width: 100%;
+    max-width: 700px;
+  }
+
+  .contacto .gridcontacto .textocontacto {
+    width: 70%;
+    height: 70%;
+    background: none;
+    box-shadow: none;
+  }
+
+  .contacto .gridcontacto .textocontacto h1 {
+    text-align: left;
+  }
+
+  .contacto .gridcontacto .textocontacto p {
+    text-align: left;
+    letter-spacing: 0.3px;
+  }
+
+  /*Horario*/
+
+  .centrarhorario {
+    width: 100%;
+  }
+
+  .horario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 262px;
+    z-index: -1;
+    margin: 0;
+    background-color: rgb(245, 246, 248);
+  }
+}

@@ -1,0 +1,88 @@
+#bannerextintor {
+  position: relative;
+  background: linear-gradient(to bottom, #1e2e27, #21332b);
+  height: 100%;
+  max-height: 520px;
+  width: 100%;
+  overflow: hidden;
+  margin: 0%;
+  padding: 0;
+}
+
+#bannerextintor img {
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+#bannerextintor .extintoragua1 {
+  display: none;
+}
+
+#bannerextintor .contenedorextintor {
+  width: 100%;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #fff;
+  text-align: center;
+}
+
+#bannerextintor h2 {
+  font-size: 28px;
+}
+
+#bannerextintor p {
+  font-weight: 700;
+  color: rgb(124, 209, 172);
+  font-size: 15px;
+}
+
+@media (min-width: 700px) {
+  #bannerextintor h2 {
+    margin-top: -50px;
+    font-size: 45px;
+  }
+  #bannerextintor p {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #bannerextintor .contenedorextintor {
+    top: 16%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+@media (min-width: 800px) {
+  #bannerextintor .extintoragua1 {
+    display: block;
+  }
+  #bannerextintor .extintoragua2 {
+    display: none;
+  }
+}
+
+@media (min-width: 0px) {
+  #bannerextintor {
+    height: 100%;
+    max-height: 580px;
+    overflow: hidden;
+  }
+
+  #bannerextintor img {
+    width: 100%;
+    max-width: 620px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #bannerextintor img {
+    margin-top: -80px;
+  }
+}

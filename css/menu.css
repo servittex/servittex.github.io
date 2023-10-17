@@ -1,0 +1,122 @@
+.btn_menu {
+  float: left;
+  font-size: 30px;
+  margin: 17px 15px;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  display: none; /*para que no se muestre*/
+}
+
+/*animación boton menu*/
+.contenedormenu {
+  position: absolute;
+  width: 20px;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+}
+
+.linea-1,
+.linea-2,
+.linea-3 {
+  width: 100%;
+  height: 3px;
+  background-color: rgb(74, 74, 77);
+  margin: 0.5px 0px;
+  transition: 0.6s ease-out;
+  border-radius: 15px;
+}
+
+.linea-2 {
+  opacity: 0;
+}
+
+.change .linea-1 {
+  transform: rotateZ(-45deg);
+  position: absolute;
+}
+
+.change .linea-3 {
+  transform: rotateZ(45deg);
+  position: absolute;
+}
+
+/*fin animación menú*/
+
+.menu {
+  display: flex;
+  list-style: none;
+  float: right;
+  height: 65px;
+}
+.menu a {
+  text-align: left;
+  display: block;
+  color: rgb(36, 36, 36);
+  height: 50px;
+  text-decoration: none;
+  padding: 15px;
+  padding-top: 19px;
+  padding-right: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.menu a:hover {
+  height: 65px;
+  color: rgb(139, 141, 143);
+}
+
+/*para que se muestre el menu al llamar esta clase*/
+ul.show {
+  opacity: 100%;    
+  top: 65px;
+}
+
+@media screen and (max-width: 1050px) {
+  .btn_menu {
+    display: inline-flex; /*para que el menu se muestre donde corresponde*/
+  }
+  
+  .menu {
+    /*sale el menu desde arriba*/
+    opacity: 0;
+    position: fixed; /*le damos una posicion fija*/
+    width: 100vw;
+    height: calc(100% - 65px); /*el 100% por el tamaño de la barra header*/
+    background-color: rgb(255, 255, 255);
+    top: -100vh; /*vamos a sacarla hacia arriba*/
+    transition: all 0.4s;
+    flex-direction: column; /*se hacen columnas*/
+    left: 0%;
+    box-shadow: 5px 0px 2px rgba(56, 57, 59, 0.2);
+    z-index: -1;
+  }
+
+  .menu a {
+    margin-right: 10%;
+    margin-left: 9%;
+    padding: 10px 15px;
+    text-align: left;
+    font-size: 18px;
+    color: rgb(39, 38, 38);
+    border-bottom: 1px solid rgb(179, 179, 179);
+  }
+
+  .menu a:hover {
+    height: 50px;
+    background-color: rgba(184, 41, 41, 0);
+    color: rgb(133, 134, 138);
+  }
+}
+
+/*arreglar tamaño en tableta girada*/
+@media screen and (max-width: 858px) and (orientation: landscape) {
+  .menu {
+    overflow: scroll; /*que se pueda scrollear*/
+    height: calc(100% - 65px); /*se recalcula*/
+  }
+}

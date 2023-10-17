@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--favicon-->
+    <link rel="icon" href="imagenes/logotipo/isotipo.ico">
+    <meta name="description"
+        content="Contamos con todo tipo de extintores de excelente calidad. Somos una compañía con cobertura a nivel nacional. " />
+    <meta name="keywords"
+        content="Extintores multipropósito, Sistema contra incendios, Extintor Satélite, Extintor Acetato y Citrato de Potasio, Extintor agua a presión, SOLKAFLAM, Extintor Gas Carbónico CO2, Extintores Colombia" />
+    <title>Extintores: Servittex</title>
+
+
+    <!--Link hoja de estillos-->
+    <link rel="stylesheet" href="css/estilos.css" />
+    <!--Link logos redes sociales-->
+    <link rel="stylesheet" href="css/fontello.css" />
+    <!--Link js para abrir menú-->
+    <script src="js/app.js" defer></script>
+    <!-- Link Swiper's CSS-->
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!--Link jquery-->
+    <script src="js/jquery.min.js"></script>
+    <!--Bloquear clic derecho-->
+    <script type="text/javascript">
+        document.oncontextmenu = function () {
+            return false;
+        };
+    </script>
+</head>
+
+<body>
+
+    <!--Header y menú responsive-->
+    <header>
+        <nav class="contenedor">
+            <span class="btn_menu" onclick="showmenu()">
+                <i>
+                    <div class="contenedormenu" id="contenedormenu" onclick="myFunction(this)">
+                        <div class="linea-1"></div>
+                        <div class="linea-2"></div>
+                        <div class="linea-3"></div>
+                    </div>
+                </i>
+            </span>
+            <div class="centrarlogotipo">
+                <a class="" href="index">
+                    <img class="logotipo" src="imagenes/logotipo/logotipo.png" alt="Logotipo Servittex S.A.S." />
+                </a>
+            </div>
+
+            <ul class="menu" id="mostrarmenu">
+                <a href="extintores">Extintores</a>
+                <a href="dotacion">Dotación</a>
+                <a href="primerosauxilios">Primeros auxilios</a>
+                <a href="equipodecarretera">Equipo de carretera</a>
+                <a href="about">About</a>
+                <a href="contacto">Contacto</a>
+            </ul>
+        </nav>
+
+        <div class="header1"></div>
+
+    </header>
+
+
+    <!--Título y cards -->
+
+    <main>
+
+        <!--Titulo-->
+        <div class="container1">
+            <div class="titulo">
+                <h1 class="center-align titulo">¿Qué extintor necesitas?</h1>
+                <a href="https://wa.me/573103490408" target="blank">
+                    <p>Contáctate con nosotros y te asesoraremos</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- Swiper -->
+        <div class="container">
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <img class="carrusel_img" src="imagenes/extintores/multiproposito.jpg"
+                            alt="Extintores multipropósito">
+                        <div class="card-description">
+                            <div class="card-title">
+                                <h4>Multipropósito</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>Multipropósito para todo tipo de fuego A, B y C.</p>
+                            </div>
+                            <div class="card-link">
+                                <a href="#">Ver más</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="carrusel_img" src="imagenes/extintores/sistema-contra-incendios.jpg"
+                            alt="Sistema contra incendios">
+                        <div class="card-description">
+                            <div class="card-title">
+                                <h4>Sistema Contra Incendios</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>Mantenimiento preventivo e instalación técnica del sistema.</p>
+                            </div>
+                            <div class="card-link">
+                                <a href="#">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="carrusel_img" src="imagenes/extintores/acetato-y-citrato.jpg"
+                            alt="Extintor Acetato y Citrato de Potasio">
+                        <div class="card-description">
+                            <div class="card-title">
+                                <h4>Acetato y Citrato de Potasio</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>Es idóneo en cocinas industriales, restaurantes, bares y
+                                    casinos.</p>
+                            </div>
+                            <div class="card-link">
+                                <a href="#">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="carrusel_img" src="imagenes/extintores/Agua-a-presion1.jpg"
+                            alt="Extintor agua a presión">
+                        <div class="card-description">
+                            <div class="card-title">
+                                <h4>Agua a presión</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>Apropiado para contrarrestar fuegos de Clase A.</p>
+                            </div>
+                            <div class="card-link">
+                                <a href="#">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="carrusel_img" src="imagenes/extintores/satelite.jpg" alt="Extintor tipo Satélite">
+                        <div class="card-description">
+                            <div class="card-title">
+                                <h4>Extintor Satélite</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>Tipo satélite de 150 libras portátil.</p>
+                            </div>
+                            <div class="card-link">
+                                <a href="#">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="carrusel_img" src="imagenes/extintores/Agua-a-presion.jpg"
+                            alt="Extintor agua a presión">
+                        <div class="card-description">
+                            <div class="card-title">
+                                <h4>Agua a presión</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>Apropiado para contrarrestar fuegos de Clase A.</p>
+                            </div>
+                            <div class="card-link">
+                                <a href="#">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="carrusel_img" src="imagenes/extintores/solkaflam.jpg" alt="Extintor SOLKAFLAM">
+                        <div class="card-description">
+                            <div class="card-title">
+                                <h4>SOLKAFLAM 123</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>Multipropósito especial para circuitos eléctricos.</p>
+                            </div>
+                            <div class="card-link">
+                                <a href="#">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="carrusel_img" src="imagenes/extintores/gas-carbonico.jpg"
+                            alt="Extintor Gas Carbónico CO2">
+                        <div class="card-description">
+                            <div class="card-title">
+                                <h4>Gas Carbónico CO2</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>Especial para fuegos tipo B y C.</p>
+                            </div>
+                            <div class="card-link">
+                                <a href="#">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Swiper JS -->
+    <script src="js/animacionmenu.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/appcards.js"></script>
+    <script src="js/ligthbox.js"></script>
+
+</body>
+
+</html>

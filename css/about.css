@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  background-color: rgb(244, 246, 247);
+}
+
+main {
+  margin-top: 75px;
+  margin-bottom: 15px;
+}
+
+/*imagen y texto modo celular*/
+
+.about .gridabout .imageabout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3%;
+  box-shadow: 5px 5px 5px rgba(170, 171, 172, 0.1);
+}
+
+.about .gridabout .imageabout img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 25px;
+}
+
+.about .gridabout .textoabout {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 3px 3px 3px rgba(179, 180, 182, 0.1);
+  border-radius: 25px;
+  color: rgb(52, 53, 54);
+  text-align: justify;
+  padding: 5%;
+  margin: 3%;
+}
+
+.about .gridabout .textoabout .textoabout1 {
+  color: rgb(51, 52, 53);
+  font-size: 33px;
+  padding-top: 3%;
+  text-align: center;
+}
+
+.about .gridabout .textoabout .textoabout2 {
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.about .gridabout .textoabout p {
+  padding-top: 5%;
+  line-height: 1.4;
+}
+
+/*clientes modo celular*/
+
+.about .clientes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  box-shadow: 3px 3px 3px rgba(134, 135, 136, 0.1);
+  border-radius: 35px;
+  padding: 5%;
+  margin: 3%;
+}
+
+.about .clientes h1 {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: rgb(36, 37, 37);
+  font-size: 23px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.about .clientes .imgclientes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+}
+
+.about .clientes .imgclientes img {
+  width: 100%;
+  max-width: 110px;
+  padding: 2%;
+}
+
+/*Máximo en modo pc*/
+@media (min-width: 1400px) {
+  .about {
+    width: 1400px;
+  }
+}
+/*Imagen y teto modo pc*/
+@media screen and (min-width: 1050px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    min-height: 850px;
+    margin-top: 80px;
+  }
+
+  .about .gridabout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about .gridabout .imageabout {
+    width: 100%;
+    height: 100%;
+    margin-right: 2%;
+  }
+
+  .about .gridabout .imageabout img {
+    border-radius: 0px;
+    width: 100%;
+    max-width: 700px;
+  }
+
+  .about .gridabout .textoabout {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+    padding-bottom: 4%;
+    margin: auto;
+  }
+
+  .about .gridabout .textoabout .textoabout1 {
+    text-align: left;
+  }
+
+  .about .gridabout .textoabout .textoabout2 {
+    text-align: justify;
+    letter-spacing: 0.3px;
+  }
+
+  /*Clientes modo pc*/
+  .about .clientes {
+    padding: 1%;
+    height: 200px;
+    box-shadow: none;
+    background: linear-gradient(to bottom, #fbfbfd, #fbfbfd);
+  }
+
+  .about .clientes h1 {
+    font-size: 33px;
+    padding-bottom: 20px;
+    letter-spacing: 0.5px;
+  }
+
+  .about .clientes .imgclientes {
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .about .clientes .imgclientes img {
+    width: 100%;
+    max-width: 110px;
+    padding: 0;
+  }
+}

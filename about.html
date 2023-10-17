@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--favicon-->
+  <link rel="icon" href="imagenes/logotipo/isotipo-buscador.ico">
+  <title>About Servittex</title>
+  
+  <!--Link hoja de estilos-->
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <!--Link logos redes sociales-->
+  <link rel="stylesheet" href="css/fontello.css" />
+  <!--Link js para abrir menú-->
+  <script src="js/app.js" defer></script>
+  <!--Bloquear clic derecho-->
+  <script type="text/javascript">
+    document.oncontextmenu = function () {
+      return false;
+    };
+  </script>
+</head>
+
+<body>
+
+  <!--Header y menú responsive-->
+  <header>
+    <nav class="contenedor">
+      <span class="btn_menu" onclick="showmenu()">
+        <i>
+          <div class="contenedormenu" id="contenedormenu" onclick="myFunction(this)">
+            <div class="linea-1"></div>
+            <div class="linea-2"></div>
+            <div class="linea-3"></div>
+          </div>
+        </i>
+      </span>
+      <div class="centrarlogotipo">
+        <a class="" href="index">
+          <img class="logotipo" src="imagenes/logotipo/logotipo.png" alt="Logotipo Servittex S.A.S." />
+        </a>
+      </div>
+
+      <ul class="menu" id="mostrarmenu">
+        <a href="extintores">Extintores</a>
+        <a href="dotacion">Dotación</a>
+        <a href="primerosauxilios">Primeros auxilios</a>
+        <a href="equipodecarretera">Equipo de carretera</a>
+        <a href="about">About</a>
+        <a href="contacto">Contacto</a>
+      </ul>
+    </nav>
+
+    <div class="header1"></div>
+
+  </header>
+
+  <main>
+    <!--Foto empresaríal y texto-->
+    <div class="about">
+      <div class="gridabout">
+        <div class="imageabout">
+          <img src="imagenes/about/Fotoabout.jpg" alt="Fotografía hombre empresaríal" />
+        </div>
+
+        <div class="textoabout">
+          <h1 class="textoabout1">About Us</h1>
+          <p class="textoabout2">
+            Somos una compañía con cobertura a nivel nacional, que desde nuestra fundación hemos estado comprometidos
+            con la seguridad industrial, productos y servicios de altos estándares de calidad, lo cual ha llevado a una
+            alianza firme con nuestros clientes, a los cuales les brindamos lo mejor de nosotros para satisfacer sus
+            necesidades, no solo ofreciéndoles un buen producto, sino asesorándoles con personal capacitado y
+            experimentado en el área de la seguridad industrial.
+          </p>
+          <p class="textoabout2">
+            Tenemos la visión de ser un referente en la industria proveedora de extintores, productos y servicios de
+            seguridad industrial, aumentando progresivamente nuestra participación en el mercado nacional,
+            capacitándonos
+            periódicamente para estar en la vanguardia de la industria, ofreciendo con ello una respuesta eficiente a
+            las
+            necesidades que se presentan diariamente a nuestras partes interesadas.
+          </p>
+        </div>
+      </div>
+      <!--Logos y texto clientes-->
+      <div class="clientes">
+        <h1>Algunos de nuestros clientes</h1>
+        <div class="imgclientes">
+          <img src="imagenes/clientes/sentry.png" alt="Logo Home Sentry" />
+          <img src="imagenes/clientes/mincivil.png" alt="Logo MINCIVIL" />
+          <img src="imagenes/clientes/bbc.png" alt="Logo Bogotá Beer Company" />
+          <img src="imagenes/clientes/gravillera albania.png" alt="Logo Gravillera Albania" />
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!--Footer-->
+  <footer>
+    <div class="contenedorfooter">
+      <div class="sociales">
+        <a class="icon-facebook" href="https://www.facebook.com/servittexsas" target="blank" id="2"></a>
+        <a class="icon-instagram" href="http://www.instagram.com/servittex" target="blank" id="2"></a>
+        <a class="icon-whatsapp" href="https://wa.me/573103490408" target="blank" id="2"></a>
+        <a class="icon-gmail" href="mailto:ventas@servittex.com" target="blank" id="2"></a>
+      </div>
+    </div>
+    <p class="copy">Servittex S.A.S.</p>
+    <p class="copy1">
+      Servicios técnicos en seguridad industrial y extintores
+    </p>
+    <p class="copy2">
+      Todas las imágenes están sujetas a derecho de autor &copy; 2023
+    </p>
+  </footer>
+
+  <!--Javascript-->
+  <script src="js/animacionmenu.js"></script>
+
+</body>
+
+</html>
